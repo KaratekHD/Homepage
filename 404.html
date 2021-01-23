@@ -27,6 +27,10 @@
         
         <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
         
+          
+          
+          <meta name="theme-color" content="#02a6f2">
+        
       
     
     
@@ -54,7 +58,9 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
       
   
     
@@ -65,6 +71,14 @@
       
     </div>
     <div data-md-component="announce">
+      
+        <aside class="md-announce">
+          <div class="md-announce__inner md-grid md-typeset">
+            
+  <p>If you're interested, follow me on <a href="https://github.com/KaratekHD">GitHub</a>!</p>
+
+          </div>
+        </aside>
       
     </div>
     
@@ -1093,7 +1107,7 @@
       <script>
         app = initialize({
           base: "",
-          features: ['navigation.tabs', 'navigationinstant', None],
+          features: ['navigation.tabs', 'navigationinstant'],
           search: Object.assign({
             worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
